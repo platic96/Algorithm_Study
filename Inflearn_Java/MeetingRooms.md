@@ -45,7 +45,7 @@ class Interval{
   Arrays.sort(intervals, Comp);
   ```
   
-3) 각 intervals의 start가 전의 intervals의 end보다 큰 경우(미팅시간이 겸치는 경우) false 반환
+3) 각 intervals의 start가 전의 intervals의 end보다 큰 경우(미팅시간이 겹치는 경우) false 반환
 ```java
 		for(int i=1; i<intervals.length; i++) {
 			if(intervals[i-1].end >intervals[i].start)
